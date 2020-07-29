@@ -1,13 +1,13 @@
 // Write your JavaScript code here!
 window.addEventListener("load", function(){
-   let form = document.querySelector("form");
+   let launchForm = document.querySelector("launchForm");
    form.addEventListener("submit", function(){
       let pilotName = document.querySelector("input[name=pilot]");
-      let copilot = document.querySelector("input[name=copilot]")
+      let copilotName = document.querySelector("input[name=copilot]")
       let fuelLevel = document.querySelector("input[name=fuelLelvel]")
       let cargoMass = document.querySelector("input[name=cargoMass]")
-      if(pilotName === "" || copilotName === "" || fuelLevel >= 0 || cargoMass >= 0){
-         alert("ALL FIELDS REQUIRED!!");
+      if(pilotName === "Chris" && copilotName === "Blake" || isNaN(fuelLevel) || isNaN(cargoMass)){
+         alert("INCORRECT SUBMISSION");
          event.preventDefault();
       }
 
