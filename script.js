@@ -12,6 +12,9 @@ window.addEventListener("load", function(){
       }
 
    });
+   let pilotName = "Chris";
+   let copilotName = "Blake";
+   
 });
 /* This block of code shows how to format the HTML once you fetch some planetary JSON!
 <h2>Mission Destination</h2>
