@@ -12,9 +12,17 @@ window.addEventListener("load", function(){
       }
 
    });
-   let pilotName = "Chris";
-   let copilotName = "Blake";
-   
+   if(pilotName !== "Chris"){
+      console.log("Not the right captain")
+   }else if(pilotName === "Chris"){
+      console.log("pilot ready")
+   }
+   if(copilotName !== "Blake"){
+      console.log("wrong copilot")
+   } else if(copilotName === "Blake"){
+      console.log("copilot ready")
+   }
+
 });
 /* This block of code shows how to format the HTML once you fetch some planetary JSON!
 <h2>Mission Destination</h2>
